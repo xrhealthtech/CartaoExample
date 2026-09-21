@@ -121,6 +121,28 @@
       color: var(--text-muted);
       margin-top: 10px;
     }
+
+      .tip-box {
+      background: rgba(249, 115, 22, 0.1);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      color: #ffedd5;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      line-height: 1.4;
+    }
+
+  .tip-box svg {
+    color: var(--accent);
+   flex-shrink: 0;
+  }
+
+  .tip-box strong {
+    color: #ffffff;
+  }
   </style>
 </head>
 <body>
@@ -151,14 +173,30 @@
       <a class="btn btn-secondary" href="CardapioExample.html">
         Serviços
       </a>
+
+      <!-- Currículo Lattes / Acadêmico -->
+      <a class="btn btn-secondary" href="https://www.instagram.com/" target="_blank" rel="noopener">
+        Instagram
+      </a>
+
       <!-- Currículo Lattes / Acadêmico -->
       <a class="btn btn-secondary" href="sobre.html" target="_blank" rel="noopener">
-        Currículo
+        Sobre
       </a>
     </div>
 
     <div class="footer">
       Toque em "Salvar na Agenda" para adicionar aos contatos.
+    </div>
+
+        <!-- Dica de instrução -->
+    <div class="tip-box">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="16" x2="12" y2="12"></line>
+        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+      </svg>
+      <span>Toque em <strong>"Salvar na Agenda"</strong> para baixar o contato.</span>
     </div>
   </div>
 
